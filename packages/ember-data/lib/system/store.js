@@ -439,6 +439,16 @@ Store = Service.extend({
 
     ---
 
+    To pass additionnal query parameter, you can pass an object as the second parameter
+
+    ```javascript
+    store.find('person', {page: 2})
+    ```
+
+    It will translate to an URL that looks like `/person?page=2`
+
+    ---
+
     You can optionally `preload` specific attributes and relationships that you know of
     by passing them as the third argument to find.
 
